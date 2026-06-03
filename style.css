@@ -139,22 +139,29 @@ nav {
   color:white;
 }
 
+.stats-section {
+  background: var(--secondary);
+  color: white;
+}
+
 .stats {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  background:var(--secondary);
-  color:white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
 }
 
 .stat {
-  text-align:center;
-  padding:40px;
+  text-align: center;
+  padding: 20px;
 }
 
 .stat h2 {
-  color:#4cc9ff;
-  font-size:3rem;
+  color: var(--primary);
+  font-size: 4rem;
 }
+
 
 section {
 	padding:100px 8%;
@@ -163,11 +170,195 @@ section {
 .section-title {
 	text-align:center;
 	margin-bottom:60px;
+	
 }
 
 .section-title span {
 	color:var(--primary);
 	font-weight:700;
 	font-size:3rem;
+}
+
+.section-title h2 {
+	margin-top:10px;
+	font-size:2.5rem;
+}
+
+.about-content p {
+	margin-bottom:20px;
+	font-size:20px;
+}
+
+.about-products-bg {
+  position: relative;
+  background: linear-gradient(rgba(7,20,40,.85),rgba(0,102,255,.65)),
+    url("https://loebelectric.com/wp-content/uploads/2022/08/loeb_blog_featured.jpg");
+
+  background-size: cover;
+  padding: 80px 20px;
+  color: white;
+}
+
+/* Optional overlay for better text contrast */
+.about-products-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(7,20,40,.7); /* dark overlay */
+}
+.about-products-bg > * {
+  position: relative; /* keep content above overlay */
+}
+
+#about, #products, #clients {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  text-align: justify;
+  margin-bottom:90px;
+}
+
+.about-image {
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+  background: linear-gradient(rgba(7,20,40,.85),rgba(0,102,255,.65)),
+              url("https://cdn-res.keymedia.com/investmentnews/uploads/2024/03/business-partnership-business-man-investor-handshake-with-effect-global-network-link.jpg-s1024x1024wisk20cuWAW24rxmFCuzlVDTO8EyZe1I6OBcoiP4g7vY233r8Q.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  height: 400px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.product-category {
+  background: rgba(255,255,255,.1);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+
+.product-category:hover{
+	transform:translateY(-8px);
+}
+
+.product-category h3{
+    color:var(--primary);
+    margin-bottom:20px;
+    font-size:1.4rem;
+}
+
+.product-category ul{
+    list-style:none;
+}
+
+.product-category li{
+    padding:10px 0;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.product-category li:last-child{
+    border-bottom:none;
+}
+
+#brands {
+	background:#f7f9fc;
+}
+
+.brand-grid, client-grid {
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+	gap:25px;
+}
+
+.brand-grid {
+max-width: 1150px;
+  margin: 0 auto;
+}
+
+.card {
+	background:white;
+	padding:30px;
+	border-radius:20px;
+	text-align:center;
+	font-weight:700;
+	box-shadow:0 10px 30px rgb(0,0,0,.08);
+}
+
+.card:hover {
+	transform:translateY(-8px);
+}
+
+#industries {
+max-width: 1400px;
+  margin: 0 auto;
+}
+
+.industry-grid {
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+	gap:25px;
+}
+
+.industry-card {
+	padding:35px;
+	background:white;
+	border-radius:20px;
+	box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.industry-card h3{
+    margin-bottom:15px;
+    color:var(--primary);
+}
+
+.industry-card:hover{
+	transform:translateY(-8px);
+}
+
+.cta {
+	background:linear-gradient(135deg,var(--secondary),var(--primary));
+	color:white;
+	text-align:center;
+}
+
+.cta h2 {
+	font-size:3rem;
+	margin-bottom:20px;
+}
+
+.cta p {
+	margin-bottom:30px;
+}
+
+.contact-box {
+	max-width:700px;
+	margin:auto;
+	text-align:center;
+}
+
+.contact-box h3 {
+	margin-bottom:30px;
+}
+
+.contact-box p {
+	margin-bottom:10px;
+}
+
+footer {
+	background:var(--dark);
+	color:white;
+	text-align:center;
+	padding:30px;
 }
 
