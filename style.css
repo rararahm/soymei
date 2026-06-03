@@ -119,3 +119,17 @@ nav{
 	text-align:center;
 	padding:40px;
 }
+
+.stat h2{
+    color:#4cc9ff;
+    font-size:3rem;
+}
+
+section{
+    padding:100px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
