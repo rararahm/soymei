@@ -1,0 +1,116 @@
+:root{
+	--primary:#0066ff;
+    	--secondary:#071428;
+    	--dark:#030712;
+    	--light:#f8fafc;
+    	--white:#ffffff;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+html{
+	scroll-behavior:smooth;
+}
+
+body{
+	font-family:'Inter',sans-serif;
+	color:#333;
+	overflow-x:hidden;
+}
+
+nav{
+	position:fixed;
+	top:0;
+	width:100%;
+	z-index:1000;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding:20px 8%;
+	backdrop-filter:blur(15px);
+	background:rgba(7,20,40,.85);
+}
+
+.logo{
+	color:white;
+	font-weight:800;
+}
+
+.nav-links{
+	display:flex;
+	gap:30px;
+}
+
+.nav-links a {
+	color:white;
+	text-decoration:none;
+	font-weight:500;
+}
+
+.hero {
+	min-height:100vh;
+	background: linear-gradient(rgba(7,20,40,.85),rgba(0,102,255,.65)),
+    	url("https://deltawye.com/wp-content/uploads/2024/01/delta-wye-industrial-vs-commercial-electrical-	contracting-7x5-1.jpg");
+
+    	background-size:cover;
+    	background-position:center;
+
+	display:flex;
+    	justify-content:center;
+    	align-items:center;
+
+    	text-align:center;
+    	color:white;
+    	padding:40px;
+}
+
+.hero-content {
+	max-width:900px;
+}
+
+.badge {
+	display:inline-block;
+    	padding:10px 20px;
+    	border-radius:50px;
+    	margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn-primary,
+.btn-secondary{
+    padding:15px 30px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.btn-primary{
+    background:white;
+    color:var(--secondary);
+}
+
+.btn-secondary{
+    border:2px solid white;
+    color:white;
+}
