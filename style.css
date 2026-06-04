@@ -213,7 +213,7 @@ section {
   position: relative; /* keep content above overlay */
 }
 
-#about, #products, #clients {
+#about, #products {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -237,21 +237,6 @@ section {
   height: 400px;
 }
 
-@media (max-width: 768px) {
-  .about-grid {
-    grid-template-columns: 1fr; /* stack vertically */
-    gap: 30px;
-    text-align: center; /* optional: center text on mobile */
-  }
-
-  .about-image {
-    height: 250px; /* shrink image height for mobile */
-  }
-
-  .about-content p {
-    font-size: 1rem; /* smaller text for readability */
-  }
-}
 
 
 .products-grid {
@@ -307,7 +292,7 @@ max-width: 1150px;
 }
 
 .card {
-	background:white;
+	background: rgba(255,255,255,.1);
 	padding:30px;
 	border-radius:20px;
 	text-align:center;
@@ -369,19 +354,20 @@ max-width: 1150px;
         }
 
 #industries {
-max-width: 1400px;
-  margin: 0 auto;
+background:#f7f9fc;
 }
 
 .industry-grid {
 	display:grid;
 	grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 	gap:25px;
+	max-width: 1150px;
+margin: 0 auto;
 }
 
 .industry-card {
 	padding:35px;
-	background:white;
+	background: rgba(255,255,255,.1);
 	border-radius:20px;
 	box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
@@ -393,6 +379,11 @@ max-width: 1400px;
 
 .industry-card:hover{
 	transform:translateY(-8px);
+}
+
+#clients {
+background:#f7f9fc;
+margin: 0 auto
 }
 
 .cta {
