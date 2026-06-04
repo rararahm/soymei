@@ -78,6 +78,10 @@ nav {
   font-weight:500;
 }
 
+.nav-links a:hover{
+	transform:translateY(-2px);
+}
+
 .hero {
   min-height:100vh;
   background: linear-gradient(rgba(7,20,40,.85),rgba(0,102,255,.65)),
@@ -135,6 +139,10 @@ position: relative;
 .btn-primary {
   background:white;
   color:var(--secondary);
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+	transform:translateY(-8px);
 }
 
 .btn-secondary {
@@ -320,7 +328,7 @@ max-width: 1150px;
             animation: scroll 29s linear infinite;
         }
         .client-carousel-track img {
-            height: 120px;
+            height: 200px;
             flex-shrink: 0;
             filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
             transition: transform 0.3s ease;
