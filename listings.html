@@ -153,9 +153,10 @@
     <div class="contact-box">
       <h3>Tell us what you need</h3>
 
-      <form action="mailto:info@soymei.com" method="post" enctype="text/plain">
+      <form action="mailto:info@soymei.com?subject=Product Inquiry from Listings Page" method="post" enctype="text/plain">
+      <!-- Hidden subject field -->
+      <input type="hidden" name="subject" value="Product Inquiry from Listings Page">
 
-	<input type="hidden" name="subject" value="Product Inquiry from Listings Page">
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" required>
 
