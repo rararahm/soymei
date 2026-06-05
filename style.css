@@ -78,7 +78,7 @@ nav {
 .hero {
   min-height:100vh;
   background: linear-gradient(rgba(7,20,40,.85),rgba(0,102,255,.65)),
-    url("https://res.cloudinary.com/https-trias-group-co-id/trias-web-asset/2019/11/service-electrical-power-system-studies.jpg");
+    url("herosection.jpg");
   background-size:cover;
   background-position:center;
   display:flex;
@@ -127,6 +127,7 @@ position: relative;
   border-radius:50px;
   text-decoration:none;
   font-weight:600;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
 .btn-primary {
@@ -153,7 +154,7 @@ position: relative;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 50px 20px;
 }
 
 .stat {
@@ -163,7 +164,12 @@ position: relative;
 
 .stat h2 {
   color: var(--primary);
-  font-size: 4rem;
+  font-size: 5rem;
+}
+
+.stat p {
+color: fdf0d5;
+font-size:20px;
 }
 
 
@@ -278,7 +284,7 @@ section {
 }
 
 #brands {
-	background:#f7f9fc;
+	background:fdf0d5;
 }
 
 .brand-grid, client-grid {
@@ -321,7 +327,7 @@ max-width: 1150px;
             animation: scroll 29s linear infinite;
         }
         .client-carousel-track img {
-            height: 200px;
+            height: 275px;
             flex-shrink: 0;
             filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
             transition: transform 0.3s ease;
@@ -355,7 +361,7 @@ max-width: 1150px;
         }
 
 #industries {
-background:#f7f9fc;
+background:fdf0d5;
 }
 
 .industry-grid {
@@ -383,7 +389,7 @@ margin: 0 auto;
 }
 
 #clients {
-background:#f7f9fc;
+background:fdf0d5;
 margin: 0 auto
 }
 
@@ -403,7 +409,7 @@ margin: 0 auto
 }
 
 #contact {
-  background: #f7f9fc;
+  background: fdf0d5;
 }
 
 .contact-grid {
@@ -435,7 +441,7 @@ margin: 0 auto
   padding: 40px;
   background: white;
   border-radius: 30px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.16);
   text-align: left;
 }
 
@@ -445,7 +451,7 @@ margin: 0 auto
 }
 
 .contact-box p {
-  margin-bottom: 16px;
+  margin-bottom: 7px;
   line-height: 1.8;
 }
 
