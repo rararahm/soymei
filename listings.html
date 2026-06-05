@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listings - Soy Mei Advantage Multisales, Inc.</title>
+  <link rel="icon" type="image/png" href="SoymeiLogo.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="SoymeiLogo.png" alt="Soymei Logo" class="logo-img">
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="listings.html">Products</a>
+      <a href="index.html#brands">Brand</a>
+      <a href="index.html#industries">Industries</a>
+      <a href="index.html#clients">Clients</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- Product Listings -->
+  <section id="products">
+    <div class="section-title">
+      <span>OUR PRODUCTS</span>
+    </div>
+<!-- Search & Filter -->
+  <div class="filter-bar">
+    <input type="text" id="searchInput" placeholder="Search products...">
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="Circuit Protection">Circuit Protection</option>
+      <option value="Metering & Enclosures">Metering & Enclosures</option>
+      <option value="Switchgear & Transformers">Switchgear & Transformers</option>
+      <option value="Busbars & Duct Systems">Busbars & Duct Systems</option>
+      <option value="Control & Automation">Control & Automation</option>
+      <option value="Power & Energy">Power & Energy</option>
+      <option value="Lighting & Safety">Lighting & Safety</option>
+      <option value="Cables & Wiring">Cables & Wiring</option>
+    </select>
+  </div>
+    <div class="products-grid">
+      <!-- Circuit Protection -->
+      <div class="product-category">
+        <h3>Circuit Protection</h3>
+        <ul>
+          <li>Miniature Circuit Breakers</li>
+          <li>Molded Case Circuit Breakers</li>
+          <li>Air Circuit Breakers</li>
+          <li>Single & Double Arrow Safety Switches</li>
+          <li>Renewable Fuse</li>
+        </ul>
+      </div>
+
+      <!-- Metering & Enclosures -->
+      <div class="product-category">
+        <h3>Metering & Enclosures</h3>
+        <ul>
+          <li>Single, Polyphase Kilowatt-hour Meter</li>
+          <li>Thermoplastic Enclosures</li>
+          <li>Motor Control Center Meter Center</li>
+          <li>Distribution and Lighting Panelboards</li>
+          <li>General Control Switchboards</li>
+        </ul>
+      </div>
+
+      <!-- Switchgear & Transformers -->
+      <div class="product-category">
+        <h3>Switchgear & Transformers</h3>
+        <ul>
+          <li>High, Medium & Low Voltage Switchgear</li>
+          <li>Distribution and Dry Type Transformer</li>
+          <li>Auto Transformer and Wye Delta</li>
+          <li>Current Potential Transformer</li>
+        </ul>
+      </div>
+
+      <!-- Busbars & Duct Systems -->
+      <div class="product-category">
+        <h3>Busbars & Duct Systems</h3>
+        <ul>
+          <li>Copper Busbar and Breaker Gutter</li>
+          <li>Wire Way, Busduct and Cable Tray</li>
+          <li>Ackermann Floor Module & Floor Duct</li>
+        </ul>
+      </div>
+
+      <!-- Control & Automation -->
+      <div class="product-category">
+        <h3>Control & Automation</h3>
+        <ul>
+          <li>Automatic & Manual Transfer Switches</li>
+          <li>Magnetic Starter</li>
+          <li>Magnetic Contactor</li>
+          <li>Industrial Relays and Timer</li>
+          <li>Thermal Overload Relay</li>
+          <li>Pilot Devices</li>
+          <li>Wiring Devices</li>
+        </ul>
+      </div>
+
+      <!-- Power & Energy -->
+      <div class="product-category">
+        <h3>Power & Energy</h3>
+        <ul>
+          <li>Capacitor Bank</li>
+          <li>Power Factor Capacitor</li>
+          <li>Electric Motor</li>
+          <li>Uninterruptible Power Supply</li>
+          <li>Automatic Voltage Regulator</li>
+        </ul>
+      </div>
+
+      <!-- Lighting & Safety -->
+      <div class="product-category">
+        <h3>Lighting & Safety</h3>
+        <ul>
+          <li>Commercial & Industrial Lighting Fixtures</li>
+          <li>Fire Alarm System</li>
+          <li>Other Electrical Fabricated Items</li>
+          <li>Conduit Pipes and Fittings</li>
+          <li>Electrical Insulator</li>
+        </ul>
+      </div>
+
+      <!-- Cables & Wiring -->
+      <div class="product-category">
+        <h3>Cables & Wiring</h3>
+        <ul>
+          <li>Wires and Cables</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<section id="contact-products">
+  <div class="section-title">
+    <span>CONTACT US</span>
+    <h2>Request Product Information</h2>
+  </div>
+
+  <div class="contact-grid">
+    <!-- Contact Form -->
+    <div class="contact-box">
+      <h3>Tell us what you need</h3>
+      <form action="mailto:rhamuel123@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="product">Product(s) of Interest</label>
+        <textarea id="product" name="product" rows="4" placeholder="List the products you want..." required></textarea>
+
+        <label for="message">Additional Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Any extra details..."></textarea>
+
+        <button type="submit" class="btn-primary">Send Request</button>
+      </form>
+    </div>
+
+    <!-- Contact Details -->
+    <div class="contact-box">
+      <h3>Soy Mei Advantage Multi Sales, Inc.</h3>
+      <p>366 2nd St. Bet. 9th & 10th Ave. Caloocan City.</p>
+      <p>Telephone: (632) 8365-8101 to 03, 8365-7749, 8365-7765, 8363-0565, 8363-2875, 8364-5240</p>
+      <p>Phone/Viber: 0928-212-5797</p>
+      <p>Email: <a href="mailto:info@soymei.com">info@soymei.com</a></p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Soy Mei Advantage Multisales, Inc. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Search & Filter Script -->
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const categoryFilter = document.getElementById("categoryFilter");
+    const productCategories = document.querySelectorAll(".product-category");
+
+    function filterProducts() {
+      const searchValue = searchInput.value.toLowerCase();
+      const selectedCategory = categoryFilter.value;
+
+      productCategories.forEach(category => {
+        const categoryTitle = category.querySelector("h3").textContent;
+        const items = category.querySelectorAll("li");
+
+        let categoryMatch = (selectedCategory === "all" || categoryTitle === selectedCategory);
+        let hasVisibleItems = false;
+
+        items.forEach(item => {
+          const text = item.textContent.toLowerCase();
+          const matchesSearch = text.includes(searchValue);
+
+          if (categoryMatch && matchesSearch) {
+            item.style.display = "block";
+            hasVisibleItems = true;
+          } else {
+            item.style.display = "none";
+          }
+        });
+
+        category.style.display = hasVisibleItems ? "block" : "none";
+      });
+    }
+
+    searchInput.addEventListener("input", filterProducts);
+    categoryFilter.addEventListener("change", filterProducts);
+  </script>
+
+<style>
+#contact-products {
+  background: var(--light);
+  padding: 80px 20px;
+}
+
+#contact-products .section-title span {
+  color: var(--primary);
+}
+
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-box label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--secondary);
+}
+
+.contact-box input,
+.contact-box textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact-box input:focus,
+.contact-box textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 8px rgba(0,102,255,0.3);
+}
+
+.contact-box button {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+</style>
+
+</body>
+</html>
