@@ -314,11 +314,6 @@ client-grid {
 	gap:25px;
 }
 
-.brand-grid {
-max-width: 1150px;
-  margin: 0 auto;
-}
-
 .card {
 	background: rgba(255,255,255,.1);
 	padding:30px;
@@ -541,6 +536,11 @@ footer {
   .contact-box,
   .contact-map {
     min-height: auto;
+  }
+.brand-image img {
+    max-width: 100%;
+    border-radius: 6px;
+    box-shadow: none;
   }
 }
 
