@@ -1,3 +1,42 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const loader = document.getElementById('page-loader');
+
+  if (loader) {
+    if (sessionStorage.getItem('soymei-loader') === '1') {
+      loader.classList.add('show');
+      window.setTimeout(() => {
+        loader.classList.remove('show');
+        sessionStorage.removeItem('soymei-loader');
+      }, 500);
+    }
+
+    window.addEventListener('load', () => {
+      loader.classList.remove('show');
+      sessionStorage.removeItem('soymei-loader');
+    }, { once: true });
+  }
+
+  document.querySelectorAll('a[href$=".html"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const target = link.getAttribute('href');
+
+      if (!target || target.startsWith('#') || target.startsWith('mailto:') || target.startsWith('tel:')) {
+        return;
+      }
+
+      event.preventDefault();
+      sessionStorage.setItem('soymei-loader', '1');
+      if (loader) {
+        loader.classList.add('show');
+      }
+
+      window.setTimeout(() => {
+        window.location.href = target;
+      }, 350);
+    });
+  });
+});
+
 function initMap() {
   const address = { lat: 14.6563, lng: 121.0690 }; // Caloocan City approximate location
   const map = new google.maps.Map(document.getElementById("map"), {
