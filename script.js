@@ -56,3 +56,4 @@ function initMap() {
     infoWindow.open({ map, anchor: marker });
   });
 }
+

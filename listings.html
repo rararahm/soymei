@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>	
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,7 +10,6 @@
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav id="navbar">
     <div class="logo">
       <a href="index.html">
@@ -19,21 +18,17 @@
     </div>
     <div class="nav-links">
       <a href="index.html#about">About</a>
-      <a href="listings.html">Products</a>
-      <a href="index.html#brands">Brand</a>
-      <a href="index.html#industries">Industries</a>
+      <a href="index.html#products">Products</a>
       <a href="index.html#clients">Clients</a>
       <a href="index.html#contact">Contact</a>
     </div>
   </nav>
 
-
-  <!-- Product Listings -->
   <section id="products">
     <div class="section-title">
       <span>OUR PRODUCTS</span>
     </div>
-<!-- Search & Filter -->
+
   <div class="filter-bar">
     <input type="text" id="searchInput" placeholder="Search products...">
     <select id="categoryFilter">
@@ -61,7 +56,6 @@
         </ul>
       </div>
 
-      <!-- Metering & Enclosures -->
       <div class="product-category">
         <h3>Metering & Enclosures</h3>
         <ul>
@@ -73,7 +67,6 @@
         </ul>
       </div>
 
-      <!-- Switchgear & Transformers -->
       <div class="product-category">
         <h3>Switchgear & Transformers</h3>
         <ul>
@@ -84,7 +77,6 @@
         </ul>
       </div>
 
-      <!-- Busbars & Duct Systems -->
       <div class="product-category">
         <h3>Busbars & Duct Systems</h3>
         <ul>
@@ -94,7 +86,6 @@
         </ul>
       </div>
 
-      <!-- Control & Automation -->
       <div class="product-category">
         <h3>Control & Automation</h3>
         <ul>
@@ -108,7 +99,6 @@
         </ul>
       </div>
 
-      <!-- Power & Energy -->
       <div class="product-category">
         <h3>Power & Energy</h3>
         <ul>
@@ -120,7 +110,6 @@
         </ul>
       </div>
 
-      <!-- Lighting & Safety -->
       <div class="product-category">
         <h3>Lighting & Safety</h3>
         <ul>
@@ -132,7 +121,6 @@
         </ul>
       </div>
 
-      <!-- Cables & Wiring -->
       <div class="product-category">
         <h3>Cables & Wiring</h3>
         <ul>
@@ -173,7 +161,6 @@
       </form>
     </div>
 
-    <!-- Contact Details -->
     <div class="contact-box">
       <h3>Soy Mei Advantage Multi Sales, Inc.</h3>
       <p>366 2nd St. Bet. 9th & 10th Ave. Caloocan City.</p>
@@ -184,14 +171,10 @@
   </div>
 </section>
 
-
-
-  <!-- Footer -->
-  <footer>
+  <footer>	 
     <p>&copy; 2026 Soy Mei Advantage Multisales, Inc. All Rights Reserved.</p>
   </footer>
 
-  <!-- Search & Filter Script -->
   <script>
     const searchInput = document.getElementById("searchInput");
     const categoryFilter = document.getElementById("categoryFilter");
@@ -229,8 +212,11 @@
   </script>
 
 <style>
+body {
+  background: rgba(15,23,42,.98)
+}
+
 #contact-products {
-  background: var(--light);
   padding: 80px 20px;
 }
 
@@ -247,7 +233,7 @@
 .contact-box label {
   font-weight: 600;
   margin-bottom: 5px;
-  color: var(--secondary);
+  color: var(--light);
 }
 
 .contact-box input,
@@ -272,6 +258,5 @@
 }
 
 </style>
-
 </body>
 </html>
