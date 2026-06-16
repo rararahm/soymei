@@ -221,7 +221,7 @@
 
 <style>
 body {
-  background: rgba(15,23,42,.98)
+  background: rgba(15,23,42,.98);
 }
 
 #contact-products {
@@ -263,6 +263,41 @@ body {
 .contact-box button {
   align-self: flex-start;
   margin-top: 10px;
+}
+
+@media (max-width: 912px), (max-width: 1080px) {
+.brand-image img {
+    max-width: 100%;
+    border-radius: 6px;
+    box-shadow: none;
+}
+}
+
+
+@media (max-width:780px) {
+  .filter-bar {
+  gap: 5px;
+  margin: 0 auto;
+  }
+
+  .filter-bar input, .filter-bar select{
+    width: 100%;
+  }
+}
+
+@media (max-width:480px) {
+  .filter-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .filter-bar input,
+  .filter-bar select {
+    width: 100%;
+  }
 }
 
 </style>

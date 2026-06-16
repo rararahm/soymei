@@ -266,8 +266,8 @@ section {
 
 .about-image {
   box-shadow: 0 10px 30px rgba(0,0,0,.25);
-  background: linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
-              url("https://www.soymei.com/webpic/Circuit%20Breakers%20in%20metro%20manila.jpg");
+  background: linear-gradient(rgba(0,0,0,0.35),rgba(0, 0, 0, 0.35)),
+              url("soymeibuilding.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 25px;
@@ -693,6 +693,17 @@ footer {
   /* Hide logo text on very small screens */
   .logo {
     display: none;
+  }
+
+  .nav-links {
+    margin:0 auto;
+  }
+}
+
+@media (max-width:370px) {
+  .nav-links {
+  gap: 15px;
+  margin: 0 auto;
   }
 }
 
