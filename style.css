@@ -200,7 +200,6 @@ nav {
   font-size: 1rem;
 }
 
-
 section {
 	padding:100px 8%;
 }
@@ -234,7 +233,7 @@ section {
   position: relative;
   background:
     linear-gradient(rgba(7,17,31,.88), rgba(37,99,235,.72)),
-    url("https://loebelectric.com/wp-content/uploads/2022/08/loeb_blog_featured.jpg") center/cover no-repeat;
+    url("aboutbg.jpg") center/cover no-repeat;
   padding: 80px 20px;
   color: white;
 }
@@ -350,7 +349,6 @@ display:flex;
   border: 1px solid rgba(148,163,184,.18);
   box-shadow: 0 20px 45px rgba(15,23,42,.35);
 }
-
 
 client-grid {
 	display:grid;
@@ -694,7 +692,7 @@ footer {
   .logo {
     display: none;
   }
-
+  
   .nav-links {
     margin:0 auto;
   }
